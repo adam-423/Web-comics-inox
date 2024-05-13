@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Inoxtag et l'ourang-outan à l'Everest !</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylepdg.css" type="text/css">
+    
+    <style>     
+      body {
+        background-color: #9473cf;
+        font-family: "Impact", sans-serif;
+        line-height: 1.2;
+        text-align: center;
+        padding: 40px 0 0 20px;
+      }
+      h1 {
+        text-transform: uppercase;
+        font-size: 40px;
+        color: #e6eaeb;
+      }
+      .comic {
+        max-width: 826px;
+        margin: 60px auto 0;
+      }
+      .scene {
+        width: 250px;
+        height: 250px;
+        border: 3px solid black;
+        background: white;
+        margin: 8px;
+        display: inline-block;
+        position: relative;
+      }
+      .scene img {
+        width: 100%;
+        height: 100%;
+        display: block;
+      }
+      .caption {
+        padding: 10px;
+        margin: 0;
+        position: absolute;
+        left: 0;
+        right: 0;
+        background: #5ec1df;
+        text-align: left;
+        top: 0;
+      }
+      .caption.bottom {
+        bottom: 0;
+        top:auto;
+        border-top: 2px solid black;
+      }
+      .caption.top {
+        top: 0;
+        border-bottom: 2px solid black;
+      }
+      .speech {
+        width: 30%;
+        border-radius:50%;
+        border: 2px solid black;
+        margin: 0;
+        position: absolute;
+        z-index: 1;
+        background: snow ;
+        padding: 20px;
+        top: -30px;
+        text-align: center;
+      }
+      /* Advanced CSS for the speech pointer */
+      .speech:after {
+        border-color: snow transparent;
+        border-style: solid;
+        border-width: 13px 13px 0;
+        bottom: -11px;
+        content: "";
+        display: block;
+        left: 50%;
+        margin-left:-14px;
+        position: absolute;
+        width: 0;
+      }
+      .speech:before {
+        border-color: black transparent;
+        border-style: solid;
+        border-width: 16px 16px 0;
+        bottom: -15px;
+        content: "";
+        display: block;
+        left: 50%;
+        margin-left:-17px;
+        position: absolute;
+        width: 0;
+      }
+      .speech.left {
+        left:-15px;
+      }
+      .speech.right {
+        right:-15px;
+      }
+      footer {
+        clear: both;
+      }
+    </style>
+
+  </head>
+  <body>
+
+<!-- Etape 1: Changer le nom de son web comic -->
+    <h1>Inox et l'ourang-outan à l'Everest !</h1>
+
+<!-- C'est ici que commence le WEB comic -->
+    <div class="comic">
+
+<!-- Chaque scéne est identifier par la classe scene -->
+
+      <div class="scene">
+        <p class="caption bottom">Après avoir vécu des aventures exceptionnelles... </p>
+        <p class="speech left">Voilà ma tente sur l'île !</p>
+        <img src="inox île déserte.jpg" alt="" />
+      </div>
+
+
+      <div class="scene">
+        <img src="inoxtag randonnée carré.jpg" alt="" />
+        <p class="caption bottom">des expérience inoubliable...</p>
+      </div>
+
+
+      <div class="scene">
+        <img src="inox van carré.jpg" alt="" />
+        <p class="caption bottom">...avec les gens que j'aprécie.</p>
+      </div>
+
+
+      <div class="scene">
+        <p class="speech right">Il faut une dernière grosse aventure pour finir</p>
+        <img src="live inox.jpg" alt="" />
+      </div>
+
+
+      <div class="scene">
+        <p class="speech right">Je vais faire une dernière aventure</p>
+        <p class="speech left">Ah bon ! Où ça ?</p>
+        <img src="idée inox.jpg" alt="" />
+      </div>
+
+
+      <div class="scene">
+        <img src="discussion michou inox dubai.jpg" alt="" />
+        <p class="caption bottom">On verra ceci dans la prochaine page!</p>
+      </div>
+
+      <!-- 
+C'est la fin du WEB comic
+
+
+
+    </div>
+
+    <!-- Disclaimer for images -->
+    <footer>
+      .<a href="Page_de_garde.html">Page de garde.............</a>
+      .<a href="WEB-comic page 2.html">Page 2</a>
+    </footer>
+
+  </body>
+</html>

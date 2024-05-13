@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Inoxtag et l'ourang-outan à l'Everest !</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylepdg.css" type="text/css">
+    
+    <style>
+      body {
+        background-color: #efefef;
+        font-family: "Impact", sans-serif;
+        line-height: 1.2;
+        text-align: center;
+        padding: 40px 0 0 20px;
+      }
+      h1 {
+        text-transform: uppercase;
+        font-size: 40px;
+        color: #e6eaeb;
+      }
+      .comic {
+        max-width: 826px;
+        margin: 60px auto 0;
+      }
+      .scene {
+        width: 250px;
+        height: 250px;
+        border: 3px solid black;
+        background: white;
+        margin: 8px;
+        display: inline-block;
+        position: relative;
+      }
+      .scene img {
+        width: 100%;
+        height: 100%;
+        display: block;
+      }
+      .caption {
+        padding: 10px;
+        margin: 0;
+        position: absolute;
+        left: 0;
+        right: 0;
+        background: #e2e971;
+        text-align: left;
+        top: 0;
+      }
+      .caption.bottom {
+        bottom: 0;
+        top:auto;
+        border-top: 2px solid black;
+      }
+      .caption.top {
+        top: 0;
+        border-bottom: 2px solid black;
+      }
+      .speech {
+        width: 40%;
+        border-radius:50%;
+        border: 2px solid black;
+        margin: 0;
+        position: absolute;
+        z-index: 1;
+        background: snow ;
+        padding: 20px;
+        top: -15px;
+        text-align: center;
+      }
+      /* Advanced CSS for the speech pointer */
+      .speech:after {
+        border-color: snow transparent;
+        border-style: solid;
+        border-width: 13px 13px 0;
+        bottom: -11px;
+        content: "";
+        display: block;
+        left: 50%;
+        margin-left:-14px;
+        position: absolute;
+        width: 0;
+      }
+      .speech:before {
+        border-color: black transparent;
+        border-style: solid;
+        border-width: 16px 16px 0;
+        bottom: -15px;
+        content: "";
+        display: block;
+        left: 50%;
+        margin-left:-17px;
+        position: absolute;
+        width: 0;
+      }
+      .speech.left {
+        left:-15px;
+      }
+      .speech.right {
+        right:-15px;
+      }
+      footer {
+        clear: both;
+      }
+    </style>
+
+  </head>
+  <body>
+
+<!-- Etape 1: Changer le nom de son web comic -->
+    <h1>Inoxtag et l'ourang-outan à l'Everest !</h1>
+
+<!-- C'est ici que commence le WEB comic -->
+    <div class="comic">
+
+<!-- Chaque scéne est identifier par la classe scene -->
+
+      <div class="scene">
+        <p class="caption bottom">Inox est enfin pret...</p>
+        <p class="speech left">maintenant, c'est l'heure</p>
+        <img src="data:image/jpeg;base64,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" alt="" />
+      </div>
+
+
+      <div class="scene">
+        <img src="inoxtagg.jpg" alt="" />
+        <p class="caption bottom">Inox ce voit déja devant son objectif...</p>
+      </div>
+
+
+      <div class="scene">
+        <p class="speech left">Inox, je te demande pardon...</p>
+        <img src="lemichou.png" alt="" />
+        <p class="caption bottom">Michou regrette.</p>
+      </div>
+
+
+      <div class="scene">
+        <p class="speech right">...je n'aurai pas du te juger</p>
+        <img src="michsuplieou.jpg" alt="" />
+      </div>
+
+
+      <div class="scene">
+        <img src="thikb.jpg" alt="" />
+        <p class="caption top">Inox réfléchie...</p>
+      </div>
+
+
+      <div class="scene">
+      
+        <img src="amis.png" alt="" />
+        <p class="caption bottom">...Les amis sont réconcilier !</p>
+      </div>
+
+      <!-- 
+C'est la fin du WEB comic
+
+
+
+    </div>
+
+    <!-- Disclaimer for images -->
+    <footer>
+      .<a href="WEB-comic page 5.html">Page 5................</a>
+      
+      
+      .<a href="WEB-comic page 7.html">Page 7</a>
+    </footer>
+
+  </body>
+</html>>

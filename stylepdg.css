@@ -1,0 +1,110 @@
+body {
+  font-family: "Segoe UI", Arial, Verdana, sans-serif;
+  font-size: 0.99em;
+  background-image: url("Page de garde.png")
+}
+
+header{
+  width: 80%;
+  padding: 0.3em 3em;
+  margin: 0.2em 3em;
+  border: 0.2em solid rgba(14, 69, 221, 0.411);
+  border-radius: 10px;
+  font-family: 'IMPACT', cursive;
+  font-size: 1.2em;
+  text-align: justify;
+}
+
+footer {
+  color: mediumblue;
+  width: 300px;
+  background-image: linear-gradient(to top, #eeeeee, #ac0ad4)
+}
+
+h1 {
+  color: rgb(0, 0, 0);
+  font-size: 3em;
+}
+
+
+
+h2:hover {
+  color: white;
+  transform-origin: bottom left;
+  transform: translate(1em);
+}
+
+img {
+  margin: 0;
+  padding: 0;
+  border: 5px solid black;
+  width: 10%;
+  height: auto;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.gauche {
+  position: fixed;
+  width: 200px;
+}
+
+nav>li {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+li:nth-child(odd) {
+  background-color: lightgreen;
+}
+
+li:nth-child(even) {
+  background-color: lightblue;
+}
+
+
+
+
+
+table,
+th,
+td,
+caption {
+  border-collapse: collapse;
+  border: 3px solid rgb(157, 18, 221);
+  padding: 0.5em;
+  margin: auto;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(233, 14, 215);
+}
+
+thead,
+tfoot {
+  background-color: rgb(138, 12, 211);
+}
+
+td:hover {
+  background-color: rgb(221, 20, 177);
+  color: rgb(255, 72, 0);
+}
+
+tbody tr:nth-child(even) {
+  background-color: #eee;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #ccc;
+}
+
+form {
+  padding: 1em;
+  margin: 1em;
+  border: 5px solid darkred;
+  border-radius: 30px;
+}
+
+
+
+
